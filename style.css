@@ -6,7 +6,10 @@ body {
 
     font-family: 'Stylish', sans-serif;
 }
-
+#main {
+    width: 375px;
+    margin: 0 auto;
+}
 header {
     width: 375px;
     height: 60px;
