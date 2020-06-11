@@ -1,0 +1,185 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+ul {list-style-type: none;}
+a { text-decoration: none;}
+
+body {
+
+    font-family: 'Stylish', sans-serif;
+}
+
+header {
+    width: 375px;
+    height: 60px;
+    background: #727b49;
+    color: #fff;
+ 
+}
+header h1 {
+    line-height: 75px;
+    margin-left: 20px;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+#visual {
+    width: 375px; height: 220px; 
+    background: #ccc;
+}
+
+.slider {
+    width: 375px; height: 220px;
+    /* outline:  1px solid red; */
+    overflow: hidden;
+}
+.slider .sliders {
+    width: calc(375px *3);
+    margin-left: calc(-375px * 0);
+    transition-duration: 0.5s;
+}
+.slider > .sliders > img {
+    float: left;
+    opacity: 1;
+}
+#info {
+    width: 375px; height: 300px;
+    background: #faf1e9;
+}
+
+#invite {
+    width: 375px;
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 60px;
+}
+
+#invite h2 {
+    width: 375px;
+    height: 60px;
+    color: #fff;
+    background: #727b49;
+    text-align: center;
+    line-height: 60px;
+}
+.txt {
+    width: 375px;
+    /* outline: 1px solid red; */
+    text-align: center;
+    
+}
+.txt p { 
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.txt2 {
+    width: 375px;
+    /* outline: 1px solid red; */
+    text-align: center;
+}
+.txt2 {
+    margin-top: 30px;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+.txt2 span {
+    margin-left: 20px;
+    letter-spacing: 0;
+}
+.call {
+    width: 375px; height: 100px;
+    text-align: center;
+    margin-top: 30px;
+    background:  #727b49;
+}
+.call .p1 {
+    font-size: 13px;
+    color: #fff;
+    float: left;
+    margin-top: 30px;
+    margin-left: 105px;
+    letter-spacing: 1px;
+}
+
+.call .p2 {
+    font-size: 13px;
+    color: #fff;
+    float: left;
+    margin-top: 15px;
+    margin-left: 105px;
+    letter-spacing: 1px;
+}
+.call img {
+    /* outline: 1px solid red; */
+    display: block;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.call .a2 img {
+    /* outline: 1px solid red; */
+    padding-top: 7px;
+}
+
+#gallery {
+    width: 375px;
+}
+#gallery h2 {
+    width: 375px; height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #fff;
+    border-bottom: 3px solid #727b49;
+    color: #727b49;
+}
+
+.box-container {
+    width: 375px;
+    height: 380px;
+    margin-top: 30px;
+    /* outline: 1px solid red; */
+    background: url(./images/bg2.jpg);
+    background-repeat: no-repeat;
+}
+.box-container ul li {
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.box-container ul li:last-of-type {
+    margin-right: 0;
+}
+/* 모션 확대 효과 */
+.box-container ul li img { transition: 0.5s;}
+.box-container ul li:hover img {
+  transform: scale(1.2);
+}
+#location {
+    clear: both;
+    width: 375px;
+}
+#location h2 {
+    width: 375px;
+    height: 60px;
+    text-align: center;
+    background: #727b49;
+    color: #fff;
+    line-height: 60px;
+}
+
+#location .l-txt {
+    width: 375px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* outline: 1px solid red; */
+    background: url(./images/bg3.jpg);
+    background-repeat: no-repeat;
+}
+.l-txt p {
+    font-size: 13px;
+}
+.l-txt p:first-child {
+    padding-top: 10px;
+}
+.l-txt p:nth-child(2) {
+    color: #727b49;
+}

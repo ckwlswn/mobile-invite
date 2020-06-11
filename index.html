@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 청첩장</title>
+    <!-- 팬시박스 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
+</head>
+<body>
+    <header>
+        <h1>10.26</h1>
+    </header>
+
+    <section id="visual">
+        <div class="slider">
+            <div class="sliders">
+                <img src="images/visual.jpg" alt="1">
+                <img src="images/visual2.jpg" alt="2">
+                <img src="images/visual3.jpg" alt="3">
+            </div>
+        </div>
+    </section>
+    <script>
+        $(function(){
+            var img_num = 0;
+            var img_width = 375;
+
+            function change_slider(num) {
+                img_num = num;
+                img_width - 375;
+                $('.slider > .sliders')
+                .css('margin-left', -(img_width * img_num) + 'px');
+            }
+             // 자동재생, 재생시간 5000
+             setInterval(function(){
+                // 마지막 이미지에서 처음으로
+                if(img_num > 2) { img_num = 0; }
+
+                change_slider(img_num);
+                img_num++; // 다음 이미지       
+            }, 3000);
+
+            $()
+        });
+    </script>
+    <section id="info">
+       <img src="images/a.jpg" alt="">
+    </section>
+
+    <section id="invite">
+        <h2>초대합니다</h2>
+       <div class="i-container">
+        <div class="txt">
+            <p>"각자 서로 다른 길을 걸어온 저희가<br>
+                이제 부부의 연으로 한 길을 걸어가고자 합니다. <br>
+                항상 처음을 생각하며, 서로 아껴주고 사랑하며 살겠습니다. <br>
+                부디 참석해 주시어 저희의 약속을<br>
+                따뜻한 격려로 축복해주시기 바랍니다." <br>
+            </p>
+        </div>
+            <div class="txt2">
+                <p>김00 윤00의 아들 <span>김00</span></p>
+                <p>주00 소00의 딸 &nbsp;&nbsp;<span>주00</span></p>
+            </div>
+       </div>
+        <div class="call">
+            <p class="p1">신랑에게 전화하기</p>
+            <a href="tel:010-1000-1000"><img src="images/phone.png" alt=""></a>
+            <p class="p2">신부에게 전화하기</p>
+            <a class="a2" href="tel:010-1000-1000"><img src="images/phone2.png" alt=""></a>
+        </div>
+    </section>
+
+
+    <section id="gallery">
+        <h2>눈부시게 기억될 날</h2>
+        <div class="box-container">
+           <ul>
+               <li>
+                   <a data-fancybox="gallery" href="images/g1-pop.jpg">
+                       <img src="images/g1.jpg" alt="">
+                </a>
+               </li>
+               <li>
+                <a data-fancybox="gallery" href="images/g2-pop.jpg">
+                    <img src="images/g2.jpg" alt="">
+             </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery" href="images/g3-pop.jpg">
+                    <img src="images/g3.jpg" alt="">
+             </a>
+            </li>
+           </ul>
+           <ul>
+            <li>
+                <a data-fancybox="gallery" href="images/g4-pop.jpg">
+                    <img src="images/g4.jpg" alt="">
+             </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery" href="images/g5-pop.jpg">
+                    <img src="images/g5.jpg" alt="">
+             </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery" href="images/g6-pop.jpg">
+                    <img src="images/g6.jpg" alt="">
+             </a>
+            </li>
+           </ul>
+           <ul>
+            <li>
+                <a data-fancybox="gallery" href="images/g7-pop.jpg">
+                    <img src="images/g7.jpg" alt="">
+             </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery" href="images/g8-pop.jpg">
+                    <img src="images/g8.jpg" alt="">
+             </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery" href="images/g9-pop.jpg">
+                    <img src="images/g9.jpg" alt="">
+             </a>
+            </li>
+           </ul>
+        </div>
+    </section>
+
+
+    <section id="location">
+        <h2>오시는 길</h2>
+        <div class="l-txt">
+            <p>그랜드컨벤션센터 1층</p>
+            <p>그랜드홀</p>
+            <p>010.1234.5678</p>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.8449186017933!2d126.89847371564737!3d37.53515283368172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9edb54158fe1%3A0x5bf7b259b6da9eb8!2z6re4656c65Oc7Luo67Kk7IWY7IS87YSw!5e0!3m2!1sko!2skr!4v1591775478730!5m2!1sko!2skr" width="375" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+</body>
+</html>
