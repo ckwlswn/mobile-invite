@@ -54,7 +54,7 @@ header h1 {
 #invite {
     width: 100%;
     background: #faf1e9;
-    background-image: url(./images/bg.jpg);
+    /* background-image: url(./images/bg.jpg); */
     background-repeat: no-repeat;
     background-position-y: 60px;
     background-size: 100%;
